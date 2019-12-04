@@ -27,24 +27,33 @@
 
                                             # MULTIPLICATION TABLE ASSIGNMENT
 # num = int(input("Enter the number: "))
-
 # print("Multiplication Table of", num)
 # for i in range(1, 14):
 #    print(num,"X",i,"=",num * i)
 
 
                     # COUNTDOWN TIMER ALARM
+# import time
+# def countdown(t):
+#         while t:
+#             mins, secs = divmod(t, 60)
+#             timer = '{:02d}:{:02d}'.format(mins, secs)
+#             print(timer, end="\r")
+#             time.sleep(1)
+#             t -= 1
+#         print('Its time!!!')
+# t = input("Enter the time in seconds: ") 
+# countdown(int(t))
+
 import time
-def countdown(t):
-        while t:
-            mins, secs = divmod(t, 60)
-            timer = '{:02d}:{:02d}'.format(mins, secs)
-            print(timer, end="\r")
-            time.sleep(1)
-            t -= 1
-        print('Oya Japa!!!')
-t = input("Enter the time in seconds: ") 
-countdown(int(t))
+boom = int(input("Countdown from:"))
+while boom > 0:
+    time.sleep(1)
+    print(boom, "\r",  end="")
+    boom -= 1
+print("BLASTOFF!")
 
-
-
+# for i in range (1,13):
+#     for n in range (1,12):
+#         print(f"{n} x {i} = {n * 1}".center(12), end="")
+#     print("\n")
