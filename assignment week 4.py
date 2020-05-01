@@ -44,13 +44,22 @@
 #         print('Its time!!!')
 # t = input("Enter the time in seconds: ") 
 # countdown(int(t))
+# 
 
+
+                            ###################CREATING A COUNT DOWN ALARM : Atha's own
 import time
+import winsound
+
+sound = winsound.Beep
 boom = int(input("Countdown from:"))
 while boom > 0:
     time.sleep(1)
     print(boom, "\r",  end="")
     boom -= 1
+    sound(500,1000)
+else:
+    sound(1000,8000)
 print("BLASTOFF!")
 
 # for i in range (1,13):
