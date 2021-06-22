@@ -445,9 +445,9 @@ class Bank_Account:
     
 
     
-    if  user_choice = deposit:
+    if  user_choice == deposit:
         print("f'\n Amount Deposited: {amount_after_deposit}'") 
-    elif user_choice = withdraw:
+    elif user_choice == withdraw:
          
                 print("f'\n You Withdrew: {amount_after_withdrawl}'") 
     else: 
